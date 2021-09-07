@@ -1,0 +1,29 @@
+{
+    "name": "@rugal/pulumi-secret-store",
+    "version": "1.0.0",
+    "license": "MIT",
+    "homepage": "https://github.com/Rugal/pulumi-secret-store",
+    "keywords": [
+        "pulumi",
+        "secrets-store",
+        "secrets-store-csi-driver",
+        "typescript"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Rugal/pulumi-secret-store.git"
+    },
+    "scripts": {
+        "build": "rm -rf ./bin && tsc && cp package.json README.md bin"
+    },
+    "dependencies": {
+        "@pulumi/kubernetes": "^3.6.3",
+        "@pulumi/pulumi": "latest"
+    },
+    "devDependencies": {
+        "typescript": "^4.3.5"
+    },
+    "pulumi": {
+        "resource": true
+    }
+}
